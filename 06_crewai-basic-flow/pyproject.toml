@@ -1,0 +1,29 @@
+[project]
+name = "basic-flow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdullah Iqbal", email = "hassangb544@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.100.1",
+    "litellm>=1.59.8",
+]
+
+
+[project.scripts]
+basic-flow = "basic_flow:main"
+simple-flow = "basic_flow.main:kickoff"
+flow-plot = "basic_flow.main:plot"
+route = "basic_flow.main2:kickoff"
+route_plot = "basic_flow.main2:plot"
+exapmle = "basic_flow.main3:kickoff"
+exapmle-plot = "basic_flow.main3:plot"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
