@@ -1,5 +1,5 @@
 [project]
-name = "prompt-chaining"
+name = "project-01"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -11,16 +11,10 @@ dependencies = [
     "crewai>=0.102.0",
     "crewai-tools>=0.36.0",
     "litellm>=1.60.2",
-    "python-dotenv>=1.0.1",
 ]
 
 [project.scripts]
-prompt-chaining = "prompt_chaining:main"
-simple-chain = "prompt_chaining.simple_chain:kickoff"
-simple-plot = "prompt_chaining.simple_chain:plot"
-complex-chain = "prompt_chaining.Complex_chain:kickoff"
-complex-plot = "prompt_chaining.Complex_chain:plot"
-
+llm_call = "project_01.hello:llm_call"
 
 
 [build-system]
