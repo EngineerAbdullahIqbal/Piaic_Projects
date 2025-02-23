@@ -1,0 +1,13 @@
+code_writer:
+  description: >
+    Write python code without python type hints for solution of problem '{problem}'
+  expected_output: >
+    Python code without python type hints for solution of problem '{problem}'
+  agent: junior_coder
+
+code_improver:
+  description: >
+    Write python code with python type hints for solution of problem '{problem}'
+  expected_output: >
+    Python code with python type hints for solution of problem '{problem}'
+  agent: senior_coder

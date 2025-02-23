@@ -1,0 +1,23 @@
+[project]
+name = "llm_connectivety"
+version = "0.1.0"
+description = "llm_connectivety using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.1,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "llm_connectivety.main:kickoff"
+llm-flow = "llm_connectivety.main1:kickoff"
+
+plot = "llm_connectivety.main:plot"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
