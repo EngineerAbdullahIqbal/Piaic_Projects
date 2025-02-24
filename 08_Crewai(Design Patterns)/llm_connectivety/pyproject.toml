@@ -9,11 +9,7 @@ dependencies = [
 ]
 
 [project.scripts]
-kickoff = "llm_connectivety.main:kickoff"
 llm-flow = "llm_connectivety.main1:kickoff"
-
-plot = "llm_connectivety.main:plot"
-
 
 [build-system]
 requires = ["hatchling"]
