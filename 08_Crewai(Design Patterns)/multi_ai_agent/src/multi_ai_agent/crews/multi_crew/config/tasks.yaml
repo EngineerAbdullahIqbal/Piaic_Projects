@@ -1,0 +1,31 @@
+take_lecture:
+  description: >
+    Conduct a thorough research about AI and explain it to a student.
+    and explain the main points in a lecture format.
+    Make sure the lecture is detailed and contains any and all relevant information.
+    make sure to include examples and case studies.
+    make sure students can understand the lecture.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about lecture.
+  agent: senior_lecturer
+
+question_about_lecture:
+  description: >
+    Ask one questions from the lecture on {topic}
+    to test the understanding of the students.
+    Make sure the questions are relevant and cover all the main points of the lecture.
+  expected_output: >
+    just a question to test the understanding of the students
+  agent: smart_student
+  # output_file: report.md
+
+research_about_question:
+  description: >
+    Conduct a thorough research about the question asked by the student.
+    and provide a detailed answer.
+    Make sure the answer is detailed and contains any and all relevant information.
+    make sure to include examples and case studies.
+    make sure students can understand the answer.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about the question.
+  agent: researcher
