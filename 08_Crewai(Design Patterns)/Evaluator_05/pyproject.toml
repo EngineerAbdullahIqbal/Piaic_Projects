@@ -1,0 +1,24 @@
+[project]
+name = "evaluator-05"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdullah Iqbal", email = "hassangb544@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+evaluator-05 = "evaluator_05:main"
+evaluator-flow = "evaluator_05.example:kickoff"
+evaluator-plot = "evaluator_05.example:plot"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
