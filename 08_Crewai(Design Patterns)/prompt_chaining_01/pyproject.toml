@@ -1,0 +1,23 @@
+[project]
+name = "prompt-chaining-01"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdullah Iqbal", email = "hassangb544@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+prompt-chaining-01 = "prompt_chaining_01:main"
+prompt-chaining = "prompt_chaining_01.prompt_chaining:kickoff"
+pc-plot = "prompt_chaining_01.prompt_chaining:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
