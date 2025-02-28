@@ -1,0 +1,28 @@
+[project]
+name = "parallelization-03"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdullah Iqbal", email = "hassangb544@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+parallelization-03 = "parallelization_03:main"
+para-flow = "parallelization_03.parallelization1:kickoff"
+para-plot = "parallelization_03.parallelization1:plot"
+para-flow2 = "parallelization_03.parallelization2:kickoff"
+para-plot2 = "parallelization_03.parallelization2:plot"
+
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
