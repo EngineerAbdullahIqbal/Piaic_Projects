@@ -10,13 +10,14 @@ requires-python = ">=3.12"
 dependencies = [
     "crewai>=0.102.0",
     "crewai-tools>=0.36.0",
+    "docling>=2.25.0",
     "google-generativeai>=0.8.4",
-    "litellm>=1.60.2",
 ]
 
 [project.scripts]
 augmented-llm-06 = "augmented_llm_06:main"
 augmented-llm = "augmented_llm_06.example:kickoff"
+augmented-llm2 = "augmented_llm_06.example1:kickoff"
 
 
 [build-system]
