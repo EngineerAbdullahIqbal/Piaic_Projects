@@ -23,7 +23,7 @@ client = MemoryClient()
 #     {"role": "assistant", "content": "That's interesting. Do you like hotels or Airbnb?"},
 #     {"role": "user", "content": "I like Airbnb more."},
 # ]
-# client.add(messages, user_id="Abdulllah")
+# client.add(messages, user_id="jhon")
 
 # Step 2: Create a Crew with User Memory
 
@@ -50,7 +50,7 @@ crew = Crew(
     memory=True,
     memory_config={
         "provider": "mem0",
-        "config": {"user_id": "Abdullah"},
+        "config": {"user_id": "jhon"},
     }
 )
 
