@@ -18,6 +18,7 @@ dependencies = [
 augmented-llm-06 = "augmented_llm_06:main"
 augmented-llm = "augmented_llm_06.example:kickoff"
 augmented-llm2 = "augmented_llm_06.example1:kickoff"
+custom-data-get = "augmented_llm_06.custom_data_get:kickoff"
 
 
 [build-system]
