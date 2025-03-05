@@ -1,0 +1,26 @@
+document_intelligence:
+  name: "Operation PDF Insight"
+  description: >
+    Perform deep analysis of {data_path} to extract entities, relationships,
+    and hierarchical document structure
+  expected_output: >
+    Structured JSON knowledge base containing:
+    - Key FAQ categories
+    - Semantic relationships between concepts
+    - Confidence-scored factual claims
+  agent: insight_miner
+  file_path: Knowledge/Canvany_FAQ.pdf
+
+precision_qa:
+  name: "Mission: Truth Extraction"
+  description: >
+    Execute multi-hop reasoning over {data_path} to answer "{question}"
+    with citation-backed responses
+  expected_output: >
+    Formatted answer containing:
+    - Direct response to question
+    - Confidence score (0-100%)
+    - Supporting document excerpts
+    - Related follow-up questions
+  agent: knowledge_navigator
+  file_path: Knowledge/Canvany_FAQ.pdf
